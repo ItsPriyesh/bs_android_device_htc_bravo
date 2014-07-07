@@ -79,8 +79,11 @@ BOARD_USES_LEGACY_RIL := true
 # interface dying all the time.
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3/bin/arm-eabi-
 
-#TWRP Flags
+# TWRP Flags
 DEVICE_RESOLUTION := 480x800
 TW_EXCLUDE_SU := true
 BOARD_HAS_NO_REAL_SDCARD := true
 TW_EXCLUDE_ENCRYPTED_BACKUPS := true
+
+# Enable O3 optimization
+TARGET_USE_O_LEVEL_3 := true
